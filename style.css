@@ -1,0 +1,53 @@
+#container {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: relative;
+  background: rgba(0, 0, 0, 1);
+  height: 5vh;
+  color: white;
+}
+
+nav p {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#container div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  font-family: "Lobster", cursive;
+  font-size: 4rem;
+}
+
+img {
+  width: 100px;
+  height: 150px;
+}
+
+.item:nth-child(1) {
+  background-color: #fff788;
+}
+
+.item:nth-child(2) {
+  background-color: #ff7373;
+}
+
+.item:nth-child(3) {
+  background-color: #95ffd6;
+}
+
+.item:nth-child(4) {
+  background-color: #9992ff;
+}
